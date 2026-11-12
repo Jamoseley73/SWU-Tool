@@ -1,0 +1,13 @@
+{
+  "_note": "Hand-picked by the owner. One entry per deck (leader + base). Each key card gets a short reason shown on the answer grid.",
+  "decks": [
+    {
+      "_example": "Delete this example once real entries exist.",
+      "leader": "Example Leader",
+      "base": "Example Base",
+      "key_cards": [
+        { "card": "Example Card", "set": "XXX", "reason": "Why this card matters in the matchup." }
+      ]
+    }
+  ]
+}

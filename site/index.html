@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SWU Deck Workbench</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <h1>SWU Deck Workbench</h1>
+        <p class="tagline">Competitive Premier statistics for Star Wars: Unlimited. Data, not advice.</p>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="card">
+        <div class="card-head">
+          <h2>Current window</h2>
+          <span id="window-label" class="pill">loading…</span>
+        </div>
+        <p id="window-text" class="muted"></p>
+      </section>
+
+      <section class="card">
+        <h2>Premier suspended list</h2>
+        <p class="muted">Suspended cards are never shown as answers or key cards.</p>
+        <table class="table">
+          <thead>
+            <tr><th>Card</th><th>Set</th><th>Suspended since</th></tr>
+          </thead>
+          <tbody id="suspensions"></tbody>
+        </table>
+      </section>
+
+      <section class="card">
+        <h2>Coming soon</h2>
+        <ul class="muted">
+          <li>Answer grids for top decks</li>
+          <li>Paste your deck: exposure check and answer finder</li>
+          <li>Matchup log and side plan sheet</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        Tournament data from <a href="https://swumetastats.com" rel="noopener">swumetastats.com</a>
+        and <a href="https://swustats.net" rel="noopener">SWU Stats</a>.
+        Unofficial fan tool, not affiliated with Fantasy Flight Games or Lucasfilm.
+      </div>
+    </footer>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

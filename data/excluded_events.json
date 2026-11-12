@@ -1,0 +1,11 @@
+{
+  "_note": "Events played on a different card pool. The pipeline drops these by Melee event id. Fill in melee_id when known.",
+  "events": [
+    {
+      "name": "Galactic Championship Last Chance Qualifier",
+      "date": "2026-10-06",
+      "melee_id": null,
+      "reason": "Played on a different card pool"
+    }
+  ]
+}

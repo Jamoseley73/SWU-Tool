@@ -1,0 +1,11 @@
+{
+  "_note": "Hand-edited. One entry per suspended card. Set 'lifted_on' to a date (YYYY-MM-DD) when a card comes back.",
+  "format": "premier",
+  "suspensions": [
+    { "card": "Cad Bane | Still Faster Than You", "set": "ASH", "suspended_on": "2026-08-31", "lifted_on": null },
+    { "card": "Chimaera", "set": "ASH", "suspended_on": "2026-11-09", "lifted_on": null },
+    { "card": "Koska Reeves", "set": "ASH", "suspended_on": "2026-11-09", "lifted_on": null },
+    { "card": "Neel", "set": "ASH", "suspended_on": "2026-11-09", "lifted_on": null },
+    { "card": "Aggressive Negotiations", "set": "SEC", "suspended_on": "2026-11-09", "lifted_on": null }
+  ]
+}

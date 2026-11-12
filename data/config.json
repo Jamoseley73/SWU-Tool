@@ -1,0 +1,16 @@
+{
+  "_note": "Hand-edited settings the pipeline and site both read.",
+  "format": "premier",
+  "active_set": "ASH",
+  "active_window_label": "pre-Nov 9 suspensions",
+  "playability_percent": {
+    "show_at_or_above": 2.0,
+    "approval_at_or_above": 0.5
+  },
+  "likely_range_confidence": 0.90,
+  "min_sample_sizes": {
+    "_todo": "Owner to decide (see docs/phases.md, open question 1). Numbers stay hidden until these are set.",
+    "games_for_matchup_win_rate": null,
+    "decks_for_card_counts": null
+  }
+}

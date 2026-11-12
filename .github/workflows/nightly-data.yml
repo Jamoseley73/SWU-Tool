@@ -1,0 +1,30 @@
+# Fetches fresh tournament data. For now it only runs when started by hand
+# (Actions tab -> "Nightly data" -> Run workflow). The nightly schedule gets
+# turned on in Phase 2, once cleaning code turns raw data into data/*.json.
+name: Nightly data
+
+on:
+  workflow_dispatch: {}
+  # schedule:
+  #   - cron: "0 9 * * *"   # every day at 09:00 UTC
+
+permissions:
+  contents: read
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fetch raw data
+        working-directory: pipeline
+        run: python -m swu_pipeline.fetch
+      - name: Keep raw files for inspection
+        uses: actions/upload-artifact@v4
+        with:
+          name: raw-data
+          path: pipeline/raw/
+          retention-days: 7
