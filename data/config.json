@@ -1,8 +1,10 @@
 {
   "_note": "Hand-edited settings the pipeline and site both read.",
   "format": "premier",
-  "active_set": "ASH",
-  "active_window_label": "pre-Nov 9 suspensions",
+  "active_set": "HMW",
+  "active_window_label": "post-Chimaera ban",
+  "active_window_start": "2026-11-09",
+  "_window_note": "Homeworlds (HMW) meta, after the Nov 9, 2026 suspensions (Chimaera, Koska Reeves, Neel (ASH) and Aggressive Negotiations (SEC)). 12 events completed as of Nov 20, 2026. Icons 2027 released Nov 20, 2026: whether it changes the Premier card pool is an open question (docs/phases.md).",
   "playability_percent": {
     "show_at_or_above": 2.0,
     "approval_at_or_above": 0.5

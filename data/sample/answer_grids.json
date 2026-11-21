@@ -1,0 +1,133 @@
+{
+  "_note": "SAMPLE DATA for layout only. Made-up cards (set code SMP) and made-up results. Replace with pipeline output once HMW data is in.",
+  "is_sample": true,
+  "window": { "set": "HMW", "label": "post-Chimaera ban", "events": 12 },
+  "decks": [
+    {
+      "id": "alpha-red",
+      "leader": { "card": "Sample Leader Alpha", "set": "SMP" },
+      "base": { "card": "Sample Base (Red, 28 HP)", "set": "SMP" },
+      "aspects": ["Aggression", "Villainy"],
+      "meta_share_pct": 16.4,
+      "decks": 87,
+      "top8s": 11,
+      "key_cards": [
+        { "id": "k1", "card": "Sample Unit: Armored Walker", "set": "SMP", "reason": "8-HP ground body on turn 4 that wins every trade until turn 6." },
+        { "id": "k2", "card": "Sample Upgrade: Shield Generator", "set": "SMP", "reason": "Gives a Shield each round; turns any unit into a must-answer threat." },
+        { "id": "k3", "card": "Sample Event: Ambush Order", "set": "SMP", "reason": "Burst damage that steals the race when you tap out." }
+      ],
+      "answers": [
+        { "card": "Sample Event: Precise Strike", "set": "SMP", "play_pct": 31.2, "cells": { "k1": "yes", "k2": "cond", "k3": null } },
+        { "card": "Sample Unit: Saboteur Scout", "set": "SMP", "play_pct": 18.9, "cells": { "k1": null, "k2": "yes", "k3": null } },
+        { "card": "Sample Upgrade: Ion Disruptor", "set": "SMP", "play_pct": 12.4, "cells": { "k1": "cond", "k2": null, "k3": null } },
+        { "card": "Sample Event: Forced Retreat", "set": "SMP", "play_pct": 9.7, "cells": { "k1": "yes", "k2": "yes", "k3": null } },
+        { "card": "Sample Event: Purge Protocol", "set": "SMP", "play_pct": 4.1, "cells": { "k1": null, "k2": "side", "k3": "side" } },
+        { "card": "Sample Event: Last Resort", "set": "SMP", "play_pct": 1.2, "cells": { "k1": "yes", "k2": null, "k3": null } },
+        { "card": "Sample Event: Desperate Gambit", "set": "SMP", "play_pct": 0.3, "cells": { "k1": "yes", "k2": "yes", "k3": null } }
+      ],
+      "matchups": [
+        { "vs": "bravo-green", "wins": 34, "games": 58 },
+        { "vs": "charlie-blue", "wins": 19, "games": 41 },
+        { "vs": "delta-yellow", "wins": 11, "games": 17 },
+        { "vs": "other", "wins": 52, "games": 90 }
+      ],
+      "shape": { "avg_cost": 3.1, "units": 25, "events": 15, "upgrades": 10, "ground_units": 20, "space_units": 5 },
+      "sideboard": [
+        { "card": "Sample Event: Purge Protocol", "set": "SMP", "pct_of_lists": 62, "avg_copies": 2.1 },
+        { "card": "Sample Unit: Heavy Escort", "set": "SMP", "pct_of_lists": 41, "avg_copies": 1.6 },
+        { "card": "Sample Upgrade: Reinforced Hull", "set": "SMP", "pct_of_lists": 23, "avg_copies": 1.2 }
+      ]
+    },
+    {
+      "id": "bravo-green",
+      "leader": { "card": "Sample Leader Bravo", "set": "SMP" },
+      "base": { "card": "Sample Base (Green, 30 HP)", "set": "SMP" },
+      "aspects": ["Command", "Heroism"],
+      "meta_share_pct": 13.8,
+      "decks": 73,
+      "top8s": 9,
+      "key_cards": [
+        { "id": "k1", "card": "Sample Unit: Fleet Commander", "set": "SMP", "reason": "Buffs every other unit; the deck's engine once it sticks." },
+        { "id": "k2", "card": "Sample Unit: Capital Cruiser", "set": "SMP", "reason": "Top-end space threat that ends games in two attacks." }
+      ],
+      "answers": [
+        { "card": "Sample Event: Precise Strike", "set": "SMP", "play_pct": 31.2, "cells": { "k1": "yes", "k2": null } },
+        { "card": "Sample Event: Overwhelming Barrage", "set": "SMP", "play_pct": 14.6, "cells": { "k1": "cond", "k2": null } },
+        { "card": "Sample Unit: Bounty Hunter Ace", "set": "SMP", "play_pct": 11.3, "cells": { "k1": "yes", "k2": "cond" } },
+        { "card": "Sample Event: Forced Retreat", "set": "SMP", "play_pct": 9.7, "cells": { "k1": "yes", "k2": "yes" } },
+        { "card": "Sample Event: Purge Protocol", "set": "SMP", "play_pct": 4.1, "cells": { "k1": null, "k2": "side" } }
+      ],
+      "matchups": [
+        { "vs": "alpha-red", "wins": 24, "games": 58 },
+        { "vs": "charlie-blue", "wins": 27, "games": 44 },
+        { "vs": "delta-yellow", "wins": 6, "games": 9 },
+        { "vs": "other", "wins": 47, "games": 81 }
+      ],
+      "shape": { "avg_cost": 3.6, "units": 28, "events": 12, "upgrades": 10, "ground_units": 17, "space_units": 11 },
+      "sideboard": [
+        { "card": "Sample Event: Overwhelming Barrage", "set": "SMP", "pct_of_lists": 55, "avg_copies": 1.9 },
+        { "card": "Sample Unit: Picket Frigate", "set": "SMP", "pct_of_lists": 30, "avg_copies": 1.4 }
+      ]
+    },
+    {
+      "id": "charlie-blue",
+      "leader": { "card": "Sample Leader Charlie", "set": "SMP" },
+      "base": { "card": "Sample Base (Blue, 26 HP)", "set": "SMP" },
+      "aspects": ["Vigilance", "Villainy"],
+      "meta_share_pct": 11.2,
+      "decks": 59,
+      "top8s": 6,
+      "key_cards": [
+        { "id": "k1", "card": "Sample Unit: Sentinel Guard", "set": "SMP", "reason": "Sentinel wall that blanks your ground attacks for two rounds." },
+        { "id": "k2", "card": "Sample Event: Total Lockdown", "set": "SMP", "reason": "Exhausts your board right before their big swing." },
+        { "id": "k3", "card": "Sample Upgrade: Command Link", "set": "SMP", "reason": "Card draw every round; out-grinds you if left alone." }
+      ],
+      "answers": [
+        { "card": "Sample Unit: Saboteur Scout", "set": "SMP", "play_pct": 18.9, "cells": { "k1": "yes", "k2": null, "k3": null } },
+        { "card": "Sample Upgrade: Ion Disruptor", "set": "SMP", "play_pct": 12.4, "cells": { "k1": null, "k2": null, "k3": "yes" } },
+        { "card": "Sample Event: Forced Retreat", "set": "SMP", "play_pct": 9.7, "cells": { "k1": "yes", "k2": null, "k3": "cond" } },
+        { "card": "Sample Event: Purge Protocol", "set": "SMP", "play_pct": 4.1, "cells": { "k1": null, "k2": null, "k3": "side" } },
+        { "card": "Sample Event: Last Resort", "set": "SMP", "play_pct": 1.2, "cells": { "k1": null, "k2": "yes", "k3": null } }
+      ],
+      "matchups": [
+        { "vs": "alpha-red", "wins": 22, "games": 41 },
+        { "vs": "bravo-green", "wins": 17, "games": 44 },
+        { "vs": "delta-yellow", "wins": 4, "games": 6 },
+        { "vs": "other", "wins": 33, "games": 62 }
+      ],
+      "shape": { "avg_cost": 3.8, "units": 21, "events": 18, "upgrades": 11, "ground_units": 15, "space_units": 6 },
+      "sideboard": [
+        { "card": "Sample Unit: Sentinel Guard", "set": "SMP", "pct_of_lists": 48, "avg_copies": 1.0 },
+        { "card": "Sample Event: Purge Protocol", "set": "SMP", "pct_of_lists": 37, "avg_copies": 1.8 }
+      ]
+    },
+    {
+      "id": "delta-yellow",
+      "leader": { "card": "Sample Leader Delta", "set": "SMP" },
+      "base": { "card": "Sample Base (Yellow, 27 HP)", "set": "SMP" },
+      "aspects": ["Cunning", "Heroism"],
+      "meta_share_pct": 4.6,
+      "decks": 24,
+      "top8s": 2,
+      "key_cards": [
+        { "id": "k1", "card": "Sample Unit: Smuggler Ace", "set": "SMP", "reason": "Ambush unit that picks off your best support piece." },
+        { "id": "k2", "card": "Sample Event: Double Cross", "set": "SMP", "reason": "Takes your biggest unit for a round and swings with it." }
+      ],
+      "answers": [
+        { "card": "Sample Event: Precise Strike", "set": "SMP", "play_pct": 31.2, "cells": { "k1": "yes", "k2": null } },
+        { "card": "Sample Unit: Bounty Hunter Ace", "set": "SMP", "play_pct": 11.3, "cells": { "k1": "yes", "k2": null } },
+        { "card": "Sample Event: Purge Protocol", "set": "SMP", "play_pct": 4.1, "cells": { "k1": null, "k2": "side" } }
+      ],
+      "matchups": [
+        { "vs": "alpha-red", "wins": 6, "games": 17 },
+        { "vs": "bravo-green", "wins": 3, "games": 9 },
+        { "vs": "charlie-blue", "wins": 2, "games": 6 },
+        { "vs": "other", "wins": 14, "games": 27 }
+      ],
+      "shape": { "avg_cost": 2.9, "units": 24, "events": 17, "upgrades": 9, "ground_units": 19, "space_units": 5 },
+      "sideboard": [
+        { "card": "Sample Event: Purge Protocol", "set": "SMP", "pct_of_lists": 50, "avg_copies": 2.0 }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+Leader
+1 Sample Leader Echo (SMP)
+
+Base
+1 Sample Base (Red, 28 HP) (SMP)
+
+Deck
+3 Sample Event: Precise Strike (SMP)
+3 Sample Unit: Bounty Hunter Ace (SMP)
+3 Sample Event: Forced Retreat (SMP)
+3 Sample Unit: Rebel Trooper (SMP)
+3 Sample Unit: Scout Speeder (SMP)
+3 Sample Unit: Veteran Pilot (SMP)
+3 Sample Unit: Assault Gunship (SMP)
+3 Sample Event: Coordinated Strike (SMP)
+3 Sample Event: Quick Draw (SMP)
+3 Sample Upgrade: Heavy Blaster (SMP)
+3 Sample Upgrade: Flight Training (SMP)
+3 Sample Unit: Field Medic (SMP)
+3 Sample Unit: Heavy Walker (SMP)
+3 Sample Unit: Starfighter Squadron (SMP)
+3 Sample Event: Covering Fire (SMP)
+3 Sample Unit: Command Officer (SMP)
+2 Neel (ASH)
+
+Sideboard
+2 Sample Event: Purge Protocol (SMP)
+2 Sample Unit: Heavy Escort (SMP)
+1 Sample Upgrade: Reinforced Hull (SMP)

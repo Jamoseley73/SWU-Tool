@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Answer Grids · SWU Deck Workbench</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <main class="wrap page">
+      <div class="page-head">
+        <h1>Answer Grids</h1>
+        <p class="muted">Each top deck's key cards, the playable cards that answer them, and how the deck performs against the field.</p>
+      </div>
+      <div id="banner"></div>
+
+      <div class="grid-layout">
+        <aside class="panel deck-list" aria-label="Top decks">
+          <h2>Top decks</h2>
+          <ul id="deck-nav"></ul>
+        </aside>
+        <section id="deck-detail" class="deck-detail"></section>
+      </div>
+    </main>
+
+    <script type="module" src="./src/pages/answer-grid.js"></script>
+  </body>
+</html>

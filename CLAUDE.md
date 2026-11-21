@@ -26,7 +26,8 @@ Claude Code reads this file automatically at the start of every session in this 
 5. **Premier format only** (Eternal later).
    - Suspensions are data with dates in `data/suspensions.json` (cards can return at set releases).
    - Suspended cards are never shown as answers or key cards.
-   - Pages built on Ashes (ASH) data are labeled "pre-Nov 9 suspensions". Switch to Homeworlds (HMW) data once enough post-Nov 9 events exist.
+   - Current window: **Homeworlds (HMW), "post-Chimaera ban"** (the owner's name for the Nov 9, 2026 four-card suspension). Switched from Ashes (ASH) on Nov 20, 2026 with 12 HMW events completed. Never mix in ASH-window events.
+   - Icons 2027 released Nov 20, 2026. Until the owner confirms how it affects the Premier card pool, don't assume.
 6. **One set's meta at a time.** Never mix sets. Exclude events played on a different card pool (list in `data/excluded_events.json`). Filter by event, not only by date.
 7. **Show sample sizes and likely ranges** (90% Wilson interval). Hide numbers below minimum sample sizes.
 8. **Card-level win rates must pass a shuffle test** before being shown. They did not pass on ASH data (too few matches).
@@ -45,7 +46,11 @@ See `docs/rulings.md`.
 
 ## Architecture
 
-- `site/` — static site built with Vite, deployed to GitHub Pages.
+- `site/` — static site built with Vite, deployed to GitHub Pages. Desktop first; mobile later.
+  - `index.html` = home page = **Deck Check** (paste-your-deck tool, the main feature).
+  - `answer-grid.html` = **Answer Grids** tab.
+  - Shared header/nav/footer in `site/src/layout.js`; logic in `site/src/lib/` with tests in `site/tests/` (`npm test`).
+  - Until real HMW data exists, pages use `data/sample/*.json`: made-up cards, always shown with a "Sample data" banner. Never present sample data as real.
 - `pipeline/` — Python code that fetches and cleans data, writes `data/*.json`. Runs nightly on GitHub Actions.
 - `data/` — JSON files the site reads. Hand-edited files (suspensions, key cards, config) live here too.
 - `docs/` — rulings, open questions, build phases.

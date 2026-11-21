@@ -3,55 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SWU Deck Workbench</title>
+    <title>Deck Check · SWU Deck Workbench</title>
+    <link rel="icon" href="data:," />
     <link rel="stylesheet" href="./src/style.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="wrap">
-        <h1>SWU Deck Workbench</h1>
-        <p class="tagline">Competitive Premier statistics for Star Wars: Unlimited. Data, not advice.</p>
+    <main class="wrap page" id="app">
+      <div class="page-head">
+        <h1>Deck Check</h1>
+        <p class="muted">Paste a Premier decklist to check legality and suspended cards, and see which of the current meta's key cards your list has answers for.</p>
       </div>
-    </header>
+      <div id="banner"></div>
 
-    <main class="wrap">
-      <section class="card">
-        <div class="card-head">
-          <h2>Current window</h2>
-          <span id="window-label" class="pill">loading…</span>
-        </div>
-        <p id="window-text" class="muted"></p>
-      </section>
+      <div class="deck-layout">
+        <section class="panel paste-panel">
+          <div class="panel-head">
+            <h2>Your decklist</h2>
+          </div>
+          <textarea id="decklist" spellcheck="false" placeholder="Leader&#10;1 Leader Name (SET)&#10;&#10;Base&#10;1 Base Name (SET)&#10;&#10;Deck&#10;3 Card Name (SET)&#10;...&#10;&#10;Sideboard&#10;2 Card Name (SET)"></textarea>
+          <div class="button-row">
+            <button id="analyze" class="btn primary">Analyze deck</button>
+            <button id="example" class="btn">Load example</button>
+            <button id="clear" class="btn ghost">Clear</button>
+          </div>
+          <p class="muted small">
+            Plain text, one card per line: <code>3 Card Name (SET)</code>. Headers <code>Leader</code>, <code>Base</code>,
+            <code>Deck</code>, <code>Sideboard</code>. Your list stays in your browser; nothing is uploaded.
+          </p>
+        </section>
 
-      <section class="card">
-        <h2>Premier suspended list</h2>
-        <p class="muted">Suspended cards are never shown as answers or key cards.</p>
-        <table class="table">
-          <thead>
-            <tr><th>Card</th><th>Set</th><th>Suspended since</th></tr>
-          </thead>
-          <tbody id="suspensions"></tbody>
-        </table>
-      </section>
-
-      <section class="card">
-        <h2>Coming soon</h2>
-        <ul class="muted">
-          <li>Answer grids for top decks</li>
-          <li>Paste your deck: exposure check and answer finder</li>
-          <li>Matchup log and side plan sheet</li>
-        </ul>
-      </section>
+        <section class="results" id="results">
+          <div class="panel empty-state">
+            <h2>Results</h2>
+            <p class="muted">Paste a list and press <strong>Analyze deck</strong>, or press <strong>Load example</strong> to see how results look.</p>
+          </div>
+        </section>
+      </div>
     </main>
 
-    <footer class="site-footer">
-      <div class="wrap">
-        Tournament data from <a href="https://swumetastats.com" rel="noopener">swumetastats.com</a>
-        and <a href="https://swustats.net" rel="noopener">SWU Stats</a>.
-        Unofficial fan tool, not affiliated with Fantasy Flight Games or Lucasfilm.
-      </div>
-    </footer>
-
-    <script type="module" src="./src/main.js"></script>
+    <script type="module" src="./src/pages/deck-check.js"></script>
   </body>
 </html>

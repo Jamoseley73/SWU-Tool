@@ -40,10 +40,11 @@ jobs:
           node-version: "22"
           cache: npm
           cache-dependency-path: site/package-lock.json
-      - name: Install and build site
+      - name: Install, test and build site
         working-directory: site
         run: |
           npm ci
+          npm test
           npm run build
       - uses: actions/upload-pages-artifact@v3
         with:
